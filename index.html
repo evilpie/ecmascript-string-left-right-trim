@@ -9,10 +9,19 @@
 	<script type="application/json" id="menu-search-biblio">
 		[{
 			"type": "clause",
+			"id": "without-abstract",
+			"aoid": null,
+			"title": "Without abstract operation",
+			"number": "1",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "Without abstract operation"
+		}, {
+			"type": "clause",
 			"id": "String.prototype.trimStart",
 			"aoid": null,
 			"title": "String.prototype.trimStart ( )",
-			"number": "1",
+			"number": "1.1",
 			"namespace": "<no location>",
 			"location": "",
 			"key": "String.prototype.trimStart ( )"
@@ -21,16 +30,76 @@
 			"id": "String.prototype.trimEnd",
 			"aoid": null,
 			"title": "String.prototype.trimEnd ( )",
-			"number": "2",
+			"number": "1.2",
 			"namespace": "<no location>",
 			"location": "",
 			"key": "String.prototype.trimEnd ( )"
 		}, {
 			"type": "clause",
+			"id": "with-abstract",
+			"aoid": null,
+			"title": "With abstract operation",
+			"number": "2",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "With abstract operation"
+		}, {
+			"type": "clause",
+			"id": "String.prototype.trim-2",
+			"aoid": null,
+			"title": "String.prototype.trim ( )",
+			"number": "2.1",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "String.prototype.trim ( )"
+		}, {
+			"type": "clause",
+			"id": "String.prototype.trimStart-2",
+			"aoid": null,
+			"title": "String.prototype.trimStart ( )",
+			"number": "2.2",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "String.prototype.trimStart ( )"
+		}, {
+			"type": "clause",
+			"id": "String.prototype.trimEnd-2",
+			"aoid": null,
+			"title": "String.prototype.trimEnd ( )",
+			"number": "2.3",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "String.prototype.trimEnd ( )"
+		}, {
+			"type": "op",
+			"aoid": "TrimString",
+			"refId": "sec-trimstring",
+			"location": "",
+			"key": "TrimString"
+		}, {
+			"type": "clause",
+			"id": "sec-trimstring",
+			"aoid": "TrimString",
+			"title": "Runtime Semantics: TrimString ( _string_, _where_ )",
+			"number": "2.4",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "Runtime Semantics: TrimString ( _string_, _where_ )"
+		}, {
+			"type": "clause",
+			"id": "sec-additional-ecmascript-features-for-web-browsers",
+			"aoid": null,
+			"title": "Additional ECMAScript Features for Web Browsers",
+			"number": "A",
+			"namespace": "<no location>",
+			"location": "",
+			"key": "Additional ECMAScript Features for Web Browsers"
+		}, {
+			"type": "clause",
 			"id": "String.prototype.trimLeft",
 			"aoid": null,
 			"title": "String.prototype.trimLeft ( )",
-			"number": "A",
+			"number": "A.1",
 			"namespace": "<no location>",
 			"location": "",
 			"key": "String.prototype.trimLeft ( )"
@@ -39,7 +108,7 @@
 			"id": "String.prototype.trimRight",
 			"aoid": null,
 			"title": "String.prototype.trimRight ( )",
-			"number": "B",
+			"number": "A.2",
 			"namespace": "<no location>",
 			"location": "",
 			"key": "String.prototype.trimRight ( )"
@@ -48,7 +117,7 @@
 			"id": "sec-copyright-and-software-license",
 			"aoid": null,
 			"title": "Copyright & Software License",
-			"number": "C",
+			"number": "B",
 			"namespace": "<no location>",
 			"location": "",
 			"key": "Copyright & Software License"
@@ -64,86 +133,200 @@
 		</div>
 		<div id="menu-toc">
 			<ol class="toc">
-				<li><span class="item-toggle-none"></span><a href="#String.prototype.trimStart" title="String.prototype.trimStart ( )"><span class="secnum">1</span> String.prototype.trimStart ( )</a></li>
-				<li><span class="item-toggle-none"></span><a href="#String.prototype.trimEnd" title="String.prototype.trimEnd ( )"><span class="secnum">2</span> String.prototype.trimEnd ( )</a></li>
-				<li><span class="item-toggle-none"></span><a href="#String.prototype.trimLeft" title="String.prototype.trimLeft ( )"><span class="secnum">A</span> String.prototype.trimLeft ( )</a></li>
-				<li><span class="item-toggle-none"></span><a href="#String.prototype.trimRight" title="String.prototype.trimRight ( )"><span class="secnum">B</span> String.prototype.trimRight ( )</a></li>
-				<li><span class="item-toggle-none"></span><a href="#sec-copyright-and-software-license" title="Copyright &amp; Software License"><span class="secnum">C</span> Copyright &amp; Software License</a></li>
+				<li><span class="item-toggle">◢</span><a href="#without-abstract" title="Without abstract operation"><span class="secnum">1</span> Without abstract operation</a>
+					<ol class="toc">
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trimStart" title="String.prototype.trimStart ( )"><span class="secnum">1.1</span> String.prototype.trimStart ( )</a></li>
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trimEnd" title="String.prototype.trimEnd ( )"><span class="secnum">1.2</span> String.prototype.trimEnd ( )</a></li>
+					</ol>
+				</li>
+				<li><span class="item-toggle">◢</span><a href="#with-abstract" title="With abstract operation"><span class="secnum">2</span> With abstract operation</a>
+					<ol class="toc">
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trim-2" title="String.prototype.trim ( )"><span class="secnum">2.1</span> String.prototype.trim ( )</a></li>
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trimStart-2" title="String.prototype.trimStart ( )"><span class="secnum">2.2</span> String.prototype.trimStart ( )</a></li>
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trimEnd-2" title="String.prototype.trimEnd ( )"><span class="secnum">2.3</span> String.prototype.trimEnd ( )</a></li>
+						<li><span class="item-toggle-none"></span><a href="#sec-trimstring" title="Runtime Semantics: TrimString ( _string_, _where_ )"><span class="secnum">2.4</span> RS: TrimString ( <var>string</var>, <var>where</var> )</a></li>
+					</ol>
+				</li>
+				<li><span class="item-toggle">◢</span><a href="#sec-additional-ecmascript-features-for-web-browsers" title="Additional ECMAScript Features for Web Browsers"><span class="secnum">A</span> Additional ECMAScript Features for Web Browsers</a>
+					<ol class="toc">
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trimLeft" title="String.prototype.trimLeft ( )"><span class="secnum">A.1</span> String.prototype.trimLeft ( )</a></li>
+						<li><span class="item-toggle-none"></span><a href="#String.prototype.trimRight" title="String.prototype.trimRight ( )"><span class="secnum">A.2</span> String.prototype.trimRight ( )</a></li>
+					</ol>
+				</li>
+				<li><span class="item-toggle-none"></span><a href="#sec-copyright-and-software-license" title="Copyright &amp; Software License"><span class="secnum">B</span> Copyright &amp; Software License</a></li>
 			</ol>
 		</div>
 	</div>
 	<h1 class="version">Stage 1 Draft / April 2, 2016</h1>
 	<h1 class="title">String.prototype.trimStart/trimEnd (plus trimLeft/trimRight)</h1>
 
-	<emu-clause id="String.prototype.trimStart">
-		<h1><span class="secnum">1</span>String.prototype.trimStart ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimStart">#</a></span></span></h1>
-		<p>This function interprets a String value as a sequence of UTF-16 encoded code points, as described in
-			<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</p>
-		<p>The following steps are taken:</p>
-		<emu-alg>
-			<ol>
-				<li>Let <var>O</var> be ?
-					<emu-xref aoid="RequireObjectCoercible"><a href="https://tc39.github.io/ecma262/#sec-requireobjectcoercible">RequireObjectCoercible</a></emu-xref>(
-					<emu-val>this</emu-val> value).</li>
-				<li>Let <var>S</var> be ?
-					<emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>O</var>).</li>
-				<li>Let <var>T</var> be a String value that is a copy of <var>S</var> with leading white space removed. The definition of white space is the union of
-					<emu-nt><a href="https://tc39.github.io/ecma262/#prod-WhiteSpace">WhiteSpace</a></emu-nt> and
-					<emu-nt><a href="https://tc39.github.io/ecma262/#prod-LineTerminator">LineTerminator</a></emu-nt>. When determining whether a Unicode code point is in Unicode general category “Zs”, code unit sequences are interpreted as UTF-16 encoded code point sequences as specified in
-					<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</li>
-				<li>Return <var>T</var>.
-				</li>
-			</ol>
-		</emu-alg>
-		<emu-note><span class="note">Note</span>
-			<p>The <code>trimStart</code> function is intentionally generic; it does not require that its
-				<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
-		</emu-note>
+	<emu-clause id="without-abstract">
+		<h1><span class="secnum">1</span>Without abstract operation<span class="utils"><span class="anchor"><a href="#without-abstract">#</a></span></span></h1>
+
+		<emu-clause id="String.prototype.trimStart">
+			<h1><span class="secnum">1.1</span>String.prototype.trimStart ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimStart">#</a></span></span></h1>
+			<p>This function interprets a String value as a sequence of UTF-16 encoded code points, as described in
+				<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</p>
+			<p>The following steps are taken:</p>
+			<emu-alg>
+				<ol>
+					<li>Let <var>O</var> be ?
+						<emu-xref aoid="RequireObjectCoercible"><a href="https://tc39.github.io/ecma262/#sec-requireobjectcoercible">RequireObjectCoercible</a></emu-xref>(
+						<emu-val>this</emu-val> value).</li>
+					<li>Let <var>S</var> be ?
+						<emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>O</var>).</li>
+					<li>Let <var>T</var> be a String value that is a copy of <var>S</var> with leading white space removed. The definition of white space is the union of
+						<emu-nt><a href="https://tc39.github.io/ecma262/#prod-WhiteSpace">WhiteSpace</a></emu-nt> and
+						<emu-nt><a href="https://tc39.github.io/ecma262/#prod-LineTerminator">LineTerminator</a></emu-nt>. When determining whether a Unicode code point is in Unicode general category “Zs”, code unit sequences are interpreted as UTF-16 encoded code point sequences as specified in
+						<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</li>
+					<li>Return <var>T</var>.
+					</li>
+				</ol>
+			</emu-alg>
+			<emu-note><span class="note">Note</span>
+				<p>The <code>trimStart</code> function is intentionally generic; it does not require that its
+					<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
+			</emu-note>
+		</emu-clause>
+
+		<emu-clause id="String.prototype.trimEnd">
+			<h1><span class="secnum">1.2</span>String.prototype.trimEnd ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimEnd">#</a></span></span></h1>
+			<p>This function interprets a String value as a sequence of UTF-16 encoded code points, as described in
+				<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</p>
+			<p>The following steps are taken:</p>
+			<emu-alg>
+				<ol>
+					<li>Let <var>O</var> be ?
+						<emu-xref aoid="RequireObjectCoercible"><a href="https://tc39.github.io/ecma262/#sec-requireobjectcoercible">RequireObjectCoercible</a></emu-xref>(
+						<emu-val>this</emu-val> value).</li>
+					<li>Let <var>S</var> be ?
+						<emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>O</var>).</li>
+					<li>Let <var>T</var> be a String value that is a copy of <var>S</var> with trailing white space removed. The definition of white space is the union of
+						<emu-nt><a href="https://tc39.github.io/ecma262/#prod-WhiteSpace">WhiteSpace</a></emu-nt> and
+						<emu-nt><a href="https://tc39.github.io/ecma262/#prod-LineTerminator">LineTerminator</a></emu-nt>. When determining whether a Unicode code point is in Unicode general category “Zs”, code unit sequences are interpreted as UTF-16 encoded code point sequences as specified in
+						<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</li>
+					<li>Return <var>T</var>.
+					</li>
+				</ol>
+			</emu-alg>
+			<emu-note><span class="note">Note</span>
+				<p>The <code>trimEnd</code> function is intentionally generic; it does not require that its
+					<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
+			</emu-note>
+		</emu-clause>
+
 	</emu-clause>
 
-	<emu-clause id="String.prototype.trimEnd">
-		<h1><span class="secnum">2</span>String.prototype.trimEnd ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimEnd">#</a></span></span></h1>
-		<p>This function interprets a String value as a sequence of UTF-16 encoded code points, as described in
-			<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</p>
-		<p>The following steps are taken:</p>
-		<emu-alg>
-			<ol>
-				<li>Let <var>O</var> be ?
-					<emu-xref aoid="RequireObjectCoercible"><a href="https://tc39.github.io/ecma262/#sec-requireobjectcoercible">RequireObjectCoercible</a></emu-xref>(
-					<emu-val>this</emu-val> value).</li>
-				<li>Let <var>S</var> be ?
-					<emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>O</var>).</li>
-				<li>Let <var>T</var> be a String value that is a copy of <var>S</var> with trailing white space removed. The definition of white space is the union of
-					<emu-nt><a href="https://tc39.github.io/ecma262/#prod-WhiteSpace">WhiteSpace</a></emu-nt> and
-					<emu-nt><a href="https://tc39.github.io/ecma262/#prod-LineTerminator">LineTerminator</a></emu-nt>. When determining whether a Unicode code point is in Unicode general category “Zs”, code unit sequences are interpreted as UTF-16 encoded code point sequences as specified in
-					<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>.</li>
-				<li>Return <var>T</var>.
-				</li>
-			</ol>
-		</emu-alg>
-		<emu-note><span class="note">Note</span>
-			<p>The <code>trimEnd</code> function is intentionally generic; it does not require that its
-				<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
-		</emu-note>
+	<emu-clause id="with-abstract">
+		<h1><span class="secnum">2</span>With abstract operation<span class="utils"><span class="anchor"><a href="#with-abstract">#</a></span></span></h1>
+
+		<emu-clause id="String.prototype.trim-2">
+			<h1><span class="secnum">2.1</span>String.prototype.trim ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trim-2">#</a></span></span></h1>
+			<p>The following steps are taken:</p>
+			<emu-alg>
+				<ol>
+					<li>Let <var>S</var> be
+						<emu-val>this</emu-val> value.</li>
+					<li>Return ?
+						<emu-xref aoid="TrimString"><a href="#sec-trimstring">TrimString</a></emu-xref>(<var>S</var>, "start+end").
+					</li>
+				</ol>
+			</emu-alg>
+			<emu-note><span class="note">Note</span>
+				<p>The <code>trim</code> function is intentionally generic; it does not require that its
+					<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
+			</emu-note>
+		</emu-clause>
+
+		<emu-clause id="String.prototype.trimStart-2">
+			<h1><span class="secnum">2.2</span>String.prototype.trimStart ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimStart-2">#</a></span></span></h1>
+			<p>The following steps are taken:</p>
+			<emu-alg>
+				<ol>
+					<li>Let <var>S</var> be
+						<emu-val>this</emu-val> value.</li>
+					<li>Return ?
+						<emu-xref aoid="TrimString"><a href="#sec-trimstring">TrimString</a></emu-xref>(<var>S</var>, "start").
+					</li>
+				</ol>
+			</emu-alg>
+			<emu-note><span class="note">Note</span>
+				<p>The <code>trimStart</code> function is intentionally generic; it does not require that its
+					<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
+			</emu-note>
+		</emu-clause>
+
+		<emu-clause id="String.prototype.trimEnd-2">
+			<h1><span class="secnum">2.3</span>String.prototype.trimEnd ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimEnd-2">#</a></span></span></h1>
+			<p>The following steps are taken:</p>
+			<emu-alg>
+				<ol>
+					<li>Let <var>S</var> be
+						<emu-val>this</emu-val> value.</li>
+					<li>Return ?
+						<emu-xref aoid="TrimString"><a href="#sec-trimstring">TrimString</a></emu-xref>(<var>S</var>, "end").
+					</li>
+				</ol>
+			</emu-alg>
+			<emu-note><span class="note">Note</span>
+				<p>The <code>trimEnd</code> function is intentionally generic; it does not require that its
+					<emu-val>this</emu-val> value be a String object. Therefore, it can be transferred to other kinds of objects for use as a method.</p>
+			</emu-note>
+		</emu-clause>
+
+		<emu-clause id="sec-trimstring" aoid="TrimString">
+			<h1><span class="secnum">2.4</span>Runtime Semantics: TrimString ( <var>string</var>, <var>where</var> )<span class="utils"><span class="anchor"><a href="#sec-trimstring">#</a></span></span></h1>
+			<p>The abstract operation TrimString is called with arguments <var>string</var> and <var>where</var>, and interprets the String value <var>string</var> as a sequence of UTF-16 encoded code points, as described in
+				<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>. It performs the following steps:</p>
+			<emu-alg>
+				<ol>
+					<li>Let <var>str</var> be ?
+						<emu-xref aoid="RequireObjectCoercible"><a href="https://tc39.github.io/ecma262/#sec-requireobjectcoercible">RequireObjectCoercible</a></emu-xref>(<var>string</var>).</li>
+					<li>Let <var>S</var> be ?
+						<emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>str</var>).</li>
+					<li>If <var>where</var> is <code>"start"</code>, let <var>T</var> be a String value that is a copy of <var>S</var> with leading white space removed.</li>
+					<li>Else if <var>where</var> is <code>"end"</code>, let <var>T</var> be a String value that is a copy of <var>S</var> with trailing white space removed.</li>
+					<li>Else,
+						<ol>
+							<li>Assert: <var>where</var> is <code>"start+end"</code>.</li>
+							<li>let <var>T</var> be a String value that is a copy of <var>S</var> with both leading and trailing white space removed.</li>
+						</ol>
+					</li>
+					<li>Return <var>T</var>.
+					</li>
+				</ol>
+			</emu-alg>
+			<p>The definition of white space is the union of
+				<emu-nt><a href="https://tc39.github.io/ecma262/#prod-WhiteSpace">WhiteSpace</a></emu-nt> and
+				<emu-nt><a href="https://tc39.github.io/ecma262/#prod-LineTerminator">LineTerminator</a></emu-nt>. When determining whether a Unicode code point is in Unicode general category “Zs”, code unit sequences are interpreted as UTF-16 encoded code point sequences as specified in
+				<emu-xref href="#sec-ecmascript-language-types-string-type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-language-types-string-type">6.1.4</a></emu-xref>
+			</p>
+		</emu-clause>
+
 	</emu-clause>
 
-	<emu-annex id="String.prototype.trimLeft">
-		<h1><span class="secnum">A</span>String.prototype.trimLeft ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimLeft">#</a></span></span></h1>
-		<emu-note><span class="note">Note</span>
-			<p>The property <code>trimStart</code> is preferred. The <code>trimLeft</code> property is provided principally for compatibility with old code. It is recommended that the <code>trimStart</code> property be used in new ECMAScript code.</p>
-		</emu-note>
-		<p>The function object that is the initial value of <code>String.prototype.trimLeft</code> is the same function object that is the initial value of <code>String.prototype.trimStart</code>.</p>
-	</emu-annex>
+	<emu-annex id="sec-additional-ecmascript-features-for-web-browsers" namespace="annexB" normative="">
+		<h1><span class="secnum">A</span>Additional ECMAScript Features for Web Browsers<span class="utils"><span class="anchor"><a href="#sec-additional-ecmascript-features-for-web-browsers">#</a></span></span></h1>
 
-	<emu-annex id="String.prototype.trimRight">
-		<h1><span class="secnum">B</span>String.prototype.trimRight ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimRight">#</a></span></span></h1>
-		<emu-note><span class="note">Note</span>
-			<p>The property <code>trimEnd</code> is preferred. The <code>trimRight</code> property is provided principally for compatibility with old code. It is recommended that the <code>trimEnd</code> property be used in new ECMAScript code.</p>
-		</emu-note>
-		<p>The function object that is the initial value of <code>String.prototype.trimRight</code> is the same function object that is the initial value of <code>String.prototype.trimEnd</code>.</p>
+		<emu-annex id="String.prototype.trimLeft">
+			<h1><span class="secnum">A.1</span>String.prototype.trimLeft ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimLeft">#</a></span></span></h1>
+			<emu-note><span class="note">Note</span>
+				<p>The property <code>trimStart</code> is preferred. The <code>trimLeft</code> property is provided principally for compatibility with old code. It is recommended that the <code>trimStart</code> property be used in new ECMAScript code.</p>
+			</emu-note>
+			<p>The function object that is the initial value of <code>String.prototype.trimLeft</code> is the same function object that is the initial value of <code>String.prototype.trimStart</code>.</p>
+		</emu-annex>
+
+		<emu-annex id="String.prototype.trimRight">
+			<h1><span class="secnum">A.2</span>String.prototype.trimRight ( )<span class="utils"><span class="anchor"><a href="#String.prototype.trimRight">#</a></span></span></h1>
+			<emu-note><span class="note">Note</span>
+				<p>The property <code>trimEnd</code> is preferred. The <code>trimRight</code> property is provided principally for compatibility with old code. It is recommended that the <code>trimEnd</code> property be used in new ECMAScript code.</p>
+			</emu-note>
+			<p>The function object that is the initial value of <code>String.prototype.trimRight</code> is the same function object that is the initial value of <code>String.prototype.trimEnd</code>.</p>
+		</emu-annex>
+
 	</emu-annex>
 	<emu-annex id="sec-copyright-and-software-license">
-		<h1><span class="secnum">C</span>Copyright &amp; Software License<span class="utils"><span class="anchor"><a href="#sec-copyright-and-software-license">#</a></span></span></h1>
+		<h1><span class="secnum">B</span>Copyright &amp; Software License<span class="utils"><span class="anchor"><a href="#sec-copyright-and-software-license">#</a></span></span></h1>
 
 		<h2>Copyright Notice</h2>
 		<p>© 2016 Sebastian Markbåge, Tom Schuster</p>
